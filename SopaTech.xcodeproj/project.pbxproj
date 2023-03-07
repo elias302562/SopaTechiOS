@@ -23,7 +23,12 @@
 		20E1440A29B7C911000B3CB2 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440929B7C911000B3CB2 /* ChatService.swift */; };
 		20E1440C29B7CB73000B3CB2 /* ChatFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440B29B7CB73000B3CB2 /* ChatFactory.swift */; };
 		20E1440F29B7CD1A000B3CB2 /* ProfileFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440E29B7CD1A000B3CB2 /* ProfileFactory.swift */; };
-		20E1441229B7D0AB000B3CB2 /* PPAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1441129B7D0AB000B3CB2 /* PPAnalytics.swift */; };
+		75EBA24129B7D78500F70F34 /* SearchFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA23C29B7D78500F70F34 /* SearchFactory.swift */; };
+		75EBA24229B7D78500F70F34 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA23D29B7D78500F70F34 /* SearchViewController.swift */; };
+		75EBA24329B7D78500F70F34 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA23E29B7D78500F70F34 /* SearchCoordinator.swift */; };
+		75EBA24429B7D78500F70F34 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA23F29B7D78500F70F34 /* SearchInteractor.swift */; };
+		75EBA24529B7D78500F70F34 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA24029B7D78500F70F34 /* SearchPresenter.swift */; };
+		75EBA24C29B7DA7A00F70F34 /* PPAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA24B29B7DA7A00F70F34 /* PPAnalytics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +69,12 @@
 		20E1440929B7C911000B3CB2 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		20E1440B29B7CB73000B3CB2 /* ChatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFactory.swift; sourceTree = "<group>"; };
 		20E1440E29B7CD1A000B3CB2 /* ProfileFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactory.swift; sourceTree = "<group>"; };
-		20E1441129B7D0AB000B3CB2 /* PPAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPAnalytics.swift; sourceTree = "<group>"; };
+		75EBA23C29B7D78500F70F34 /* SearchFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFactory.swift; sourceTree = "<group>"; };
+		75EBA23D29B7D78500F70F34 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		75EBA23E29B7D78500F70F34 /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		75EBA23F29B7D78500F70F34 /* SearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		75EBA24029B7D78500F70F34 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		75EBA24B29B7DA7A00F70F34 /* PPAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPAnalytics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +125,8 @@
 		20E143CF29B7C334000B3CB2 /* SopaTech */ = {
 			isa = PBXGroup;
 			children = (
-				20E1441029B7D09E000B3CB2 /* Dependencies */,
-				20E1440D29B7CD0F000B3CB2 /* Profile */,
-				20E1440029B7C404000B3CB2 /* Chat */,
+				75EBA24629B7D7F600F70F34 /* Examples */,
+				75EBA23B29B7D78500F70F34 /* Search */,
 				20E143D029B7C334000B3CB2 /* AppDelegate.swift */,
 				20E143D229B7C334000B3CB2 /* SceneDelegate.swift */,
 				20E143D429B7C334000B3CB2 /* ViewController.swift */,
@@ -167,10 +176,32 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		20E1441029B7D09E000B3CB2 /* Dependencies */ = {
+		75EBA23B29B7D78500F70F34 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				20E1441129B7D0AB000B3CB2 /* PPAnalytics.swift */,
+				75EBA23C29B7D78500F70F34 /* SearchFactory.swift */,
+				75EBA23D29B7D78500F70F34 /* SearchViewController.swift */,
+				75EBA23E29B7D78500F70F34 /* SearchCoordinator.swift */,
+				75EBA23F29B7D78500F70F34 /* SearchInteractor.swift */,
+				75EBA24029B7D78500F70F34 /* SearchPresenter.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		75EBA24629B7D7F600F70F34 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				75EBA24A29B7DA6C00F70F34 /* Dependencies */,
+				20E1440D29B7CD0F000B3CB2 /* Profile */,
+				20E1440029B7C404000B3CB2 /* Chat */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		75EBA24A29B7DA6C00F70F34 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				75EBA24B29B7DA7A00F70F34 /* PPAnalytics.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -307,15 +338,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E143D529B7C334000B3CB2 /* ViewController.swift in Sources */,
-				20E1441229B7D0AB000B3CB2 /* PPAnalytics.swift in Sources */,
 				20E143D129B7C334000B3CB2 /* AppDelegate.swift in Sources */,
 				20E1440F29B7CD1A000B3CB2 /* ProfileFactory.swift in Sources */,
+				75EBA24129B7D78500F70F34 /* SearchFactory.swift in Sources */,
+				75EBA24C29B7DA7A00F70F34 /* PPAnalytics.swift in Sources */,
 				20E1440629B7C623000B3CB2 /* ChatCoordinator.swift in Sources */,
+				75EBA24329B7D78500F70F34 /* SearchCoordinator.swift in Sources */,
 				20E1440829B7C67C000B3CB2 /* ChatViewController.swift in Sources */,
 				20E1440229B7C43B000B3CB2 /* ChatInteractor.swift in Sources */,
+				75EBA24429B7D78500F70F34 /* SearchInteractor.swift in Sources */,
+				75EBA24229B7D78500F70F34 /* SearchViewController.swift in Sources */,
 				20E1440A29B7C911000B3CB2 /* ChatService.swift in Sources */,
 				20E1440429B7C54E000B3CB2 /* ChatPresenter.swift in Sources */,
 				20E1440C29B7CB73000B3CB2 /* ChatFactory.swift in Sources */,
+				75EBA24529B7D78500F70F34 /* SearchPresenter.swift in Sources */,
 				20E143D329B7C334000B3CB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,7 +533,7 @@
 				INFOPLIST_FILE = SopaTech/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -524,7 +560,7 @@
 				INFOPLIST_FILE = SopaTech/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
