@@ -16,6 +16,14 @@
 		20E143E829B7C337000B3CB2 /* SopaTechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E143E729B7C337000B3CB2 /* SopaTechTests.swift */; };
 		20E143F229B7C337000B3CB2 /* SopaTechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E143F129B7C337000B3CB2 /* SopaTechUITests.swift */; };
 		20E143F429B7C337000B3CB2 /* SopaTechUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E143F329B7C337000B3CB2 /* SopaTechUITestsLaunchTests.swift */; };
+		20E1440229B7C43B000B3CB2 /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440129B7C43B000B3CB2 /* ChatInteractor.swift */; };
+		20E1440429B7C54E000B3CB2 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440329B7C54E000B3CB2 /* ChatPresenter.swift */; };
+		20E1440629B7C623000B3CB2 /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440529B7C623000B3CB2 /* ChatCoordinator.swift */; };
+		20E1440829B7C67C000B3CB2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440729B7C67C000B3CB2 /* ChatViewController.swift */; };
+		20E1440A29B7C911000B3CB2 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440929B7C911000B3CB2 /* ChatService.swift */; };
+		20E1440C29B7CB73000B3CB2 /* ChatFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440B29B7CB73000B3CB2 /* ChatFactory.swift */; };
+		20E1440F29B7CD1A000B3CB2 /* ProfileFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1440E29B7CD1A000B3CB2 /* ProfileFactory.swift */; };
+		20E1441229B7D0AB000B3CB2 /* PPAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1441129B7D0AB000B3CB2 /* PPAnalytics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		20E143ED29B7C337000B3CB2 /* SopaTechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SopaTechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E143F129B7C337000B3CB2 /* SopaTechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SopaTechUITests.swift; sourceTree = "<group>"; };
 		20E143F329B7C337000B3CB2 /* SopaTechUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SopaTechUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20E1440129B7C43B000B3CB2 /* ChatInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
+		20E1440329B7C54E000B3CB2 /* ChatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		20E1440529B7C623000B3CB2 /* ChatCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCoordinator.swift; sourceTree = "<group>"; };
+		20E1440729B7C67C000B3CB2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		20E1440929B7C911000B3CB2 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		20E1440B29B7CB73000B3CB2 /* ChatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFactory.swift; sourceTree = "<group>"; };
+		20E1440E29B7CD1A000B3CB2 /* ProfileFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactory.swift; sourceTree = "<group>"; };
+		20E1441129B7D0AB000B3CB2 /* PPAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPAnalytics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,9 @@
 		20E143CF29B7C334000B3CB2 /* SopaTech */ = {
 			isa = PBXGroup;
 			children = (
+				20E1441029B7D09E000B3CB2 /* Dependencies */,
+				20E1440D29B7CD0F000B3CB2 /* Profile */,
+				20E1440029B7C404000B3CB2 /* Chat */,
 				20E143D029B7C334000B3CB2 /* AppDelegate.swift */,
 				20E143D229B7C334000B3CB2 /* SceneDelegate.swift */,
 				20E143D429B7C334000B3CB2 /* ViewController.swift */,
@@ -125,6 +144,35 @@
 				20E143F329B7C337000B3CB2 /* SopaTechUITestsLaunchTests.swift */,
 			);
 			path = SopaTechUITests;
+			sourceTree = "<group>";
+		};
+		20E1440029B7C404000B3CB2 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				20E1440129B7C43B000B3CB2 /* ChatInteractor.swift */,
+				20E1440329B7C54E000B3CB2 /* ChatPresenter.swift */,
+				20E1440529B7C623000B3CB2 /* ChatCoordinator.swift */,
+				20E1440729B7C67C000B3CB2 /* ChatViewController.swift */,
+				20E1440929B7C911000B3CB2 /* ChatService.swift */,
+				20E1440B29B7CB73000B3CB2 /* ChatFactory.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		20E1440D29B7CD0F000B3CB2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				20E1440E29B7CD1A000B3CB2 /* ProfileFactory.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		20E1441029B7D09E000B3CB2 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				20E1441129B7D0AB000B3CB2 /* PPAnalytics.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +307,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E143D529B7C334000B3CB2 /* ViewController.swift in Sources */,
+				20E1441229B7D0AB000B3CB2 /* PPAnalytics.swift in Sources */,
 				20E143D129B7C334000B3CB2 /* AppDelegate.swift in Sources */,
+				20E1440F29B7CD1A000B3CB2 /* ProfileFactory.swift in Sources */,
+				20E1440629B7C623000B3CB2 /* ChatCoordinator.swift in Sources */,
+				20E1440829B7C67C000B3CB2 /* ChatViewController.swift in Sources */,
+				20E1440229B7C43B000B3CB2 /* ChatInteractor.swift in Sources */,
+				20E1440A29B7C911000B3CB2 /* ChatService.swift in Sources */,
+				20E1440429B7C54E000B3CB2 /* ChatPresenter.swift in Sources */,
+				20E1440C29B7CB73000B3CB2 /* ChatFactory.swift in Sources */,
 				20E143D329B7C334000B3CB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
