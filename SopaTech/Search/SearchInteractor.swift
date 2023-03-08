@@ -1,4 +1,6 @@
-protocol SearchInteracting { }
+protocol SearchInteracting {
+    func search(text: String?)
+}
 
 final class SearchInteractor {
     private let presenter: SearchPresenting
@@ -8,4 +10,12 @@ final class SearchInteractor {
     }
 }
 
-extension SearchInteractor: SearchInteracting { }
+extension SearchInteractor: SearchInteracting {
+    func search(text: String?) {
+        guard
+            let text = text,
+            !text.isEmpty
+        else { return }
+        print(text)
+    }
+}
