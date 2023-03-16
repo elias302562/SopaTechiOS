@@ -1,7 +1,7 @@
 import UIKit
 
-enum ListFactory {
-    static func make() -> UIViewController {
+struct ListFactory {
+    func make() -> UIViewController {
         let service = ListService()
         let coordinator = ListCoordinator()
         let presenter = ListPresenter(coordinator: coordinator)
