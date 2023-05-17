@@ -1,4 +1,6 @@
-protocol SearchPresenting { }
+protocol SearchPresenting {
+    func openSearchList(query: String)
+}
 
 final class SearchPresenter {
     let coordinator: SearchCoordinating
@@ -9,4 +11,8 @@ final class SearchPresenter {
     }
 }
 
-extension SearchPresenter: SearchPresenting { }
+extension SearchPresenter: SearchPresenting {
+    func openSearchList(query: String) {
+        coordinator.openSearchList(query: query)
+    }
+}

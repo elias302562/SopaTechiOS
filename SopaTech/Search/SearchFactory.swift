@@ -12,6 +12,7 @@ struct SearchFactory: SearchFactoring {
         let viewController = SearchViewController(interactor: interactor)
         
         presenter.displayer = viewController
+        coordinator.viewController = viewController
         
         return viewController
     }

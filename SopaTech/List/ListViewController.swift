@@ -11,6 +11,12 @@ final class ListViewController: UIViewController {
     }
 
     required init?(coder: NSCoder) { nil }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        interactor.didStartScreen()
+    }
 }
 
 // MARK: - ListDisplaying

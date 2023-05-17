@@ -1,4 +1,6 @@
-protocol ListInteracting: AnyObject { }
+protocol ListInteracting: AnyObject {
+    func didStartScreen()
+}
 
 final class ListInteractor {
     private let service: ListServicing
@@ -11,4 +13,10 @@ final class ListInteractor {
 }
 
 // MARK: - ListInteracting
-extension ListInteractor: ListInteracting { }
+extension ListInteractor: ListInteracting {
+    func didStartScreen() {
+        service.getPhotos(query: "office") {
+            
+        }
+    }
+}

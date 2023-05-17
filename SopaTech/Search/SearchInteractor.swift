@@ -16,6 +16,7 @@ extension SearchInteractor: SearchInteracting {
             let text = text,
             !text.isEmpty
         else { return }
-        print(text)
+        
+        presenter.openSearchList(query: text)
     }
 }
