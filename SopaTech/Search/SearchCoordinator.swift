@@ -11,7 +11,7 @@ final class SearchCoordinator {
 extension SearchCoordinator: SearchCoordinating {
     func openSearchList(query: String) {
         let listFactory = ListFactory()
-        let listViewController = listFactory.make()
+        let listViewController = listFactory.make(query: query)
         
         viewController?.present(listViewController, animated: true)
     }
